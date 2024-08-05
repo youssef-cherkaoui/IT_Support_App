@@ -1,16 +1,16 @@
 package com.example.it_support.Model;
 
+import com.example.it_support.Enum.EtatEquipement;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import jakarta.persistence.*;
+import lombok.*;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import java.util.List;
 
 @Entity
 @Data
+@Getter
+@Setter
 @AllArgsConstructor
 @NoArgsConstructor
 public class EquipementModel {
@@ -21,4 +21,8 @@ public class EquipementModel {
     private String nom ;
     private String description ;
     private String DateAquisation;
+    @Enumerated(EnumType.STRING)
+    private EtatEquipement etatEquipement ;
+
+
 }
