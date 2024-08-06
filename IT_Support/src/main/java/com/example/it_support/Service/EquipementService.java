@@ -6,9 +6,8 @@ import java.util.List;
 
 public interface EquipementService {
 
-    EquipementModel createEquipement(EquipementModel equipement);
+    EquipementModel CreateEquipement(EquipementModel equipement);
     List<EquipementModel> getAllEquipements();
-    void  deleteEquipement(Long id);
-    EquipementModel editEquipement(EquipementModel equipement , Long id);
-
-    }
+    void deleteEquipements(Long idEquipement);
+    EquipementModel updateEquipements(EquipementModel equipement,Long idequipement);
+}
