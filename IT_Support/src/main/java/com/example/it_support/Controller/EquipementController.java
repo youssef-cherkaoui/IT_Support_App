@@ -9,31 +9,29 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/equipement")
+@RequestMapping("/api/v1/auth/Admin")
 public class EquipementController {
 
     @Autowired
     private EquipementService equipementService;
 
-    @PostMapping("/create")
-    public EquipementModel createEquipement(@RequestBody EquipementModel equipement){
-        return equipementService.createEquipement(equipement);
+    @PostMapping("/CreateEquipement")
+    public EquipementModel CreateEquipement(@RequestBody EquipementModel equipement) {
+        return equipementService.CreateEquipement(equipement);
     }
 
-    @GetMapping("/All")
-    public List<EquipementModel> getAllEquipement(){
+    @GetMapping("/ShowAll")
+    public List<EquipementModel> getAllEquipements() {
         return equipementService.getAllEquipements();
     }
 
-    @PutMapping("/edit/{id}")
-    public EquipementModel updateEquipement(@PathVariable Long id, @RequestBody EquipementModel equipement){
-        return equipementService.editEquipement(equipement, id);
+    @DeleteMapping("/{idEquipement}")
+    public void deleteEquipements(@PathVariable Long idEquipement) {
+        equipementService.deleteEquipements(idEquipement);
     }
 
-
-    @DeleteMapping("/delete/{id}")
-    public void deleteEquipement(@PathVariable Long id){
-        equipementService.deleteEquipement(id);
+    @PutMapping("/equipPut/{idEquipement}")
+    public EquipementModel updateEquipements(@PathVariable Long idEquipement, @RequestBody EquipementModel equipement) {
+        return equipementService.updateEquipements(equipement, idEquipement);
     }
 }
-
