@@ -3,6 +3,7 @@ package com.example.it_support.Model;
 
 import com.example.it_support.Enum.Role;
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.DiscriminatorValue;
 import jakarta.persistence.Entity;
 import jakarta.persistence.OneToMany;
@@ -21,7 +22,7 @@ import java.util.List;
 @DiscriminatorValue("UTILISATEUR")
 public class UtilisateurModel extends PersonneModel {
 
-    @OneToMany
+    @OneToMany(mappedBy = "utili", cascade = CascadeType.ALL)
     @JsonIgnore
     private List<TicketModel> ticketModels;
 

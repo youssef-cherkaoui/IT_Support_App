@@ -24,13 +24,24 @@ public class TicketModel {
     private EtatTicket ticket;
 
     @ManyToOne
-    @JoinColumn(name = "id_tech")
-    private TechnicienModel technicienModel;
+    @JoinColumn(name = "tech_id", nullable = false)
+    private TechnicienModel technicienModels;
 
     @ManyToOne
-    @JoinColumn(name = "id_utili")
-    private UtilisateurModel utilisateurModel;
+    @JoinColumn(name = "utili_id" , nullable = false)
+    private UtilisateurModel utili;
+
+    @ManyToOne
+    @JoinColumn(name = "ticket_id" , nullable = false)
+    private TicketModel ticketModels;
+
+    @ManyToOne
+    @JoinColumn(name = "equip_id" , nullable = false)
+    private EquipementModel equipementModels;
 
 
+    @ManyToOne
+    @JoinColumn(name = "panne_id" , nullable = false)
+    private Panne panne;
 
 }
