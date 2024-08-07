@@ -25,4 +25,13 @@ public class EquipementModel {
     private EtatEquipement etatEquipement ;
 
 
-}
+    @JsonIgnore
+    @OneToMany(mappedBy = "equipementModels")
+    private List<HistoriqueModel> historiqueModels;
+
+    @JsonIgnore
+    @OneToMany(mappedBy ="equipementModels", cascade = CascadeType.ALL)
+    private List<TicketModel> ticketModels;
+
+    }
+
