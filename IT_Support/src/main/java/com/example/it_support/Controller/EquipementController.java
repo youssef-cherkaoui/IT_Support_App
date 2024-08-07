@@ -25,7 +25,7 @@ public class EquipementController {
         return equipementService.getAllEquipements();
     }
 
-    @DeleteMapping("/{idEquipement}")
+    @DeleteMapping("/delete/{idEquipement}")
     public void deleteEquipements(@PathVariable Long idEquipement) {
         equipementService.deleteEquipements(idEquipement);
     }
