@@ -10,7 +10,7 @@ import java.util.List;
 public interface TicketService {
 
     TicketModel CreateTicket(TicketModel ticketModel);
-    TicketModel CreateTicketT(UtilisateurModel utilisateurModel, TicketDTO ticketDTO);
+    TicketModel CreateTicketT(TicketDTO ticketDTO);
     List<TicketModel> getAllTicket();
     TicketModel AssignerTicket(Long id, TicketModel ticketModel);
 }
