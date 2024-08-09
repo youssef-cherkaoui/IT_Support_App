@@ -1,9 +1,13 @@
 package com.example.it_support.Controller;
 
 
+import com.example.it_support.DTO.TicketDTO;
+import com.example.it_support.Model.PersonneModel;
 import com.example.it_support.Model.TicketModel;
+import com.example.it_support.Model.UtilisateurModel;
 import com.example.it_support.Service.TicketService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -18,6 +22,11 @@ public class TicketController {
     @PostMapping("/CreateTicket")
     public TicketModel CreateTicket(@RequestBody TicketModel ticketModel){
         return ticketService.CreateTicket(ticketModel);
+    }
+
+    @PostMapping("/CreateTicketT")
+    public TicketModel CreateTicketT(@RequestBody TicketDTO ticketModel){
+        return ticketService.CreateTicketT(ticketModel);
     }
 
     @GetMapping("/ShowAllTicket")
