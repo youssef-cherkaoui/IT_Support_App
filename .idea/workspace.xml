@@ -1,19 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="11b035a7-7202-4bab-919f-298d61079a6d" name="Changes" comment="" />
+    <list default="true" id="11b035a7-7202-4bab-919f-298d61079a6d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/IT_Support/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/IT_Support/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IT_Support/src/main/java/com/example/it_support/Configuration/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/IT_Support/src/main/java/com/example/it_support/Configuration/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IT_Support/src/main/java/com/example/it_support/Controller/AuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/IT_Support/src/main/java/com/example/it_support/Controller/AuthenticationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IT_Support/src/main/java/com/example/it_support/Controller/PanneController.java" beforeDir="false" afterPath="$PROJECT_DIR$/IT_Support/src/main/java/com/example/it_support/Controller/PanneController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IT_Support/src/main/java/com/example/it_support/DTO/TicketDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/IT_Support/src/main/java/com/example/it_support/DTO/TicketDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IT_Support/src/main/java/com/example/it_support/Model/EquipementModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/IT_Support/src/main/java/com/example/it_support/Model/EquipementModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IT_Support/src/main/java/com/example/it_support/Model/Panne.java" beforeDir="false" afterPath="$PROJECT_DIR$/IT_Support/src/main/java/com/example/it_support/Model/Panne.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IT_Support/src/main/java/com/example/it_support/Model/PanneModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/IT_Support/src/main/java/com/example/it_support/Model/TechnicienModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/IT_Support/src/main/java/com/example/it_support/Model/TechnicienModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IT_Support/src/main/java/com/example/it_support/Model/TicketModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/IT_Support/src/main/java/com/example/it_support/Model/TicketModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IT_Support/src/main/java/com/example/it_support/Model/UtilisateurModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/IT_Support/src/main/java/com/example/it_support/Model/UtilisateurModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IT_Support/src/main/java/com/example/it_support/Service/AuthenticationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/IT_Support/src/main/java/com/example/it_support/Service/AuthenticationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IT_Support/src/main/java/com/example/it_support/Service/EquipementServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/IT_Support/src/main/java/com/example/it_support/Service/EquipementServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IT_Support/src/main/java/com/example/it_support/Service/TicketServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/IT_Support/src/main/java/com/example/it_support/Service/TicketServiceImpl.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2kF3yQKvMHGJP5mUM2hl7jiOHNj" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -23,6 +41,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "Personne",
     "kotlin-language-version-configured": "true"
   }
 }]]></component>
