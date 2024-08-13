@@ -1,0 +1,12 @@
+<div class="container">
+  <h3>Ajouter Panne</h3>
+  <div class="formulaire">
+    <form (ngSubmit)="onSubmit()">
+      <div class="form-goup">
+        <label style="color: white">Name</label>
+        <input style="width: 25rem" type="text" class="form-control" [(ngModel)]="panne.description" name="name" id="name">
+      </div>
+      <button class="btn btn-success">Submit</button>
+    </form>
+  </div>
+</div>

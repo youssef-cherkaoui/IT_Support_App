@@ -1,0 +1,20 @@
+<h3>Ajouter Equipment</h3>
+
+<form (ngSubmit)="onSubmit()">
+  <div class="form-goup">
+    <label>{{equipement.nom}}</label>
+  </div>
+
+  <div class="form-group">
+    <label for="etatEquipement" style="color: white">Statut</label>
+    <select [(ngModel)]="equipement.etatEquipement" class="form-control" name="etatEquipement" id="etatEquipement">
+      <option [value]="EtatEquipement.Fonctionnel">Fonctionnel</option>
+      <option [value]="EtatEquipement.En_Panne">En Panne</option>
+    </select>
+  </div>
+  <button type="submit" class="btn btn-primary" (click)="onSubmit()">Changer le Statut</button>
+
+
+<!--  <button class="btn btn-success">Submit</button>-->
+
+</form>
