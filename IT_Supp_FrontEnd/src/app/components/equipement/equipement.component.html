@@ -1,0 +1,23 @@
+
+<div class="d-flex justify-content-end mb-3">
+  <a class="btn btn-success" routerLink="addEquipement">Ajouter un équipement</a>
+</div>
+<div class="container">
+  <h2>Liste des équipements</h2>
+  <div class="cards">
+    <div class="card" style="width: 17rem;" *ngFor="let equipment of equipements">
+      <div class="card-body">
+        <h5 class="card-title">{{ equipment.nom }}</h5>
+        <p class="card-text">{{equipment.etatEquipement}}</p>
+        <p class="card-text">{{equipment.description}}</p>
+<div class="pak">
+        <a (click)="updateEquipement(equipment.idequipement)" class="btn btn-primary">Modifier</a>
+        <a (click)="deleteEquipement(equipment.idequipement)" class="btn btn-danger">Suprimmer</a>
+        <a (click)="changerEquipement(equipment.idequipement)" class="btn btn-close-white">Changer Statut</a>
+      </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+

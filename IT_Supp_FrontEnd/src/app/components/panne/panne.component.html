@@ -1,0 +1,24 @@
+<div class="d-flex justify-content-end mb-3">
+  <a class="btn btn-success" routerLink="create">Ajouter panne</a>
+</div>
+<div class="container">
+  <h2 class="title">Liste des pannes</h2>
+  <div class="tablaux">
+    <table class="table table-dark">
+      <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Modifier</th>
+        <th scope="col">Suprimmer</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr  *ngFor="let panne of panneList">
+        <td>{{ panne.description }}</td>
+        <td><a (click)="updatePanne(panne.idpanne)" class="btn btn-primary">Modifier</a></td>
+        <td><a (click)="deletePanne(panne.idpanne)" class="btn btn-danger">Suprimmer</a></td>
+      </tbody>
+    </table>
+  </div>
+</div>
+<router-outlet></router-outlet>

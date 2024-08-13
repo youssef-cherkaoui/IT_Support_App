@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<body>
+<header>
+  <nav>
+    <div class="logo animated-logo">IT Support</div>
+    <ul class="animated-nav">
+      <li><a routerLink="home" class="active">Accueil</a></li>
+      <li><a routerLink="/equipements">Équipements</a></li>
+      <li><a routerLink="">Tickets</a></li>
+      <li><a routerLink="pannes">Pannes</a></li>
+      <li><a href="#">Utilisateur</a></li>
+      <li><a href="#">Technicien</a></li>
+
+      <!-- Bouton de connexion/déconnexion -->
+      <li *ngIf="!isLoggedIn(); else logoutLink"><a routerLink="login">Connexion</a></li>
+      <ng-template #logoutLink>
+        <li><a href="#" (click)="onLogout()">Déconnexion</a></li>
+      </ng-template>
+    </ul>
+  </nav>
+</header>
+
+<router-outlet></router-outlet>
+
+<footer>
+  <p>&copy; 2024 IT Support System. Tous droits réservés.</p>
+</footer>
+</body>
+</html>
