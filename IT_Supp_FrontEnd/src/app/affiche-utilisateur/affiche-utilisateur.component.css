@@ -1,0 +1,15 @@
+.cards{
+  padding-top: 2%;
+  display: flex;
+  gap: 0.5em;
+  flex-wrap: wrap;
+}
+.container{
+  padding-top: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.body{
+  background-color: #5B99C2;
+}
