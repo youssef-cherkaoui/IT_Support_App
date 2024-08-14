@@ -1,0 +1,13 @@
+<div class="container">
+  <h2>Users List</h2>
+  <a routerLink="add" class="btn btn-success">Ajouter Utilisateur</a>
+  <div class="cards">
+    <div class="card" style="width: 17rem;" *ngFor="let user of utilisateurs">
+      <div class="card-body">
+        <h5 class="card-title">{{ user.nom }}</h5>
+        <p class="card-text">{{user.id}}</p>
+        <p class="card-text">{{user.email}}</p>
+      </div>
+    </div>
+  </div>
+</div>

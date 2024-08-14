@@ -1,0 +1,26 @@
+<div class="container">
+  <h3>Ajouter Utilisateur</h3>
+  <div class="formulaire">
+    <form (ngSubmit)="onSubmit()">
+      <div class="form-goup">
+        <label style="color: white">Full Name</label>
+        <input placeholder="Full Name" type="text" class="form-control" [(ngModel)]="utilisateur.nom" name="fullName" id="fullName">
+      </div>
+
+      <div class="form-goup">
+        <label style="color: white">Email</label>
+        <input placeholder="Email" style="width: 26rem" type="email" class="form-control" [(ngModel)]="utilisateur.email" name="email" id="email">
+      </div>
+
+      <div class="form-goup">
+        <label style="color: white">Password</label>
+        <input placeholder="Password" type="text" class="form-control" [(ngModel)]="utilisateur.motdepasse" name="password" id="password">
+      </div>
+
+
+      <button class="btn">Submit</button>
+
+    </form>
+  </div>
+</div>
+<router-outlet></router-outlet>
